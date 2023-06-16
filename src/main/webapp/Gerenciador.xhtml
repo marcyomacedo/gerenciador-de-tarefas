@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Gerenciador de tarefas</title>
+</h:head>
+<h:body>
+	
+	<h1>Cadastrar tarefa</h1>
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputText value="Título"/>
+			<h:inputText value="#{tarefaMB.tarefa.titulo}"/>
+			
+			<h:outputText value="Descrição"/>
+			<h:inputTextarea value="#{tarefaMB.tarefa.descricao}"/>
+			
+			<h:outputText value="Responsável"/>
+			<h:selectOneMenu value="#{tarefaMB.tarefa.responsavel}">
+				<f:selectItem itemLabel="Eu" itemValue="Eu"/>
+			</h:selectOneMenu>
+			
+			<h:outputText value="Prioridade"/>
+			<h:selectOneMenu value="#{tarefaMB.tarefa.prioridade}">
+				<f:selectItem itemLabel="Alta" itemValue="Alta"/>
+				<f:selectItem itemLabel="Média" itemValue="Média"/>
+				<f:selectItem itemLabel="Baixa" itemValue="Baixa"/>
+			</h:selectOneMenu>
+			
+			<h:outputText value="Deadline"/>
+			<h:inputText value="#{tarefaMB.tarefa.deadline}"/>
+			
+			
+			<h:outputText />				
+			<h:commandButton value="Cadastrar" action="#{tarefaMB.adicionar}"/>
+				
+			
+		</h:panelGrid>
+	</h:form>
+
+</h:body>
+</html>
