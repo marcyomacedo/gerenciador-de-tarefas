@@ -1,0 +1,78 @@
+@charset "UTF-8";
+.formTarefa {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.formTarefa h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.formTarefa .panelGrid {
+    margin-bottom: 20px;
+}
+
+.formTarefa .panelGrid .outputText {
+    font-weight: bold;
+}
+
+.formTarefa .panelGrid .outputText-descricao {
+    font-weight: bold;
+}
+
+.formTarefa .panelGrid .input-Textarea{
+	
+	min-width: 400px;
+	max-width: 400px;
+	min-height: 79px;
+	max-height: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+	
+	
+}
+
+
+.formTarefa .panelGrid .selectOneMenu-prioridade {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formTarefa .panelGrid .selectOneMenu-responsavel {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.formTarefa .panelGrid .input-titulo {
+    width: 400px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.formTarefa .panelGrid .commandButton {
+    background-color: #2196f3;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formTarefa .panelGrid .commandButton:hover {
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+

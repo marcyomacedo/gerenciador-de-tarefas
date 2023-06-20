@@ -48,4 +48,8 @@ public class Tarefa implements Serializable{
 		this.deadline = deadline;
 	}
 
+	
+	
+	
+
 }

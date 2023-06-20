@@ -1,6 +1,7 @@
 package br.com.gerenciador.controller;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
@@ -16,30 +17,28 @@ public class TarefaMB implements Serializable{
 	
 	@Inject	
 	private Tarefa tarefa;
-	
-	public String adicionar() {
-		
-		System.out.println("metodo ativo");
-		
-		limpar();
-		
-		return null;		
-		
-	}
-	
-	private void limpar() {
-		tarefa = new Tarefa();
-	}
+
 	
 	
 
-	public Tarefa getTarefa() {
-		return tarefa;
-	}
+	
+    public String adicionar() {
+    	
+        
+        return null;
+    }
 
-	public void setTarefa(Tarefa tarefa) {
-		this.tarefa = tarefa;
-	}
+    
+
+    
+    public Tarefa getTarefa() {
+        return tarefa;
+    }
+
+    public void setTarefa(Tarefa tarefa) {
+        this.tarefa = tarefa;
+    }    
+
 	
 	
 
